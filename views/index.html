@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Simple hello world</title>
+        <style>
+            .prompt {
+                font-size: 16px;
+                color: brown;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            .container {
+                width: 50%;
+            }
+            .left-pane {
+                width: 50%;
+                float: left;
+            }
+            .right-pane {
+                width: 50%;
+                float: right;
+            }
+            .submit-name {
+                clear: both;
+            }
+        </style>
+    </head>
+<body>
+    <h1>Admin Portal</h1>
+
+    <form method='GET' action="/addagent">
+
+        <p>firstname</p>
+        <input type="text" id="firstname" name="firstname" />
+
+        <p>rainbow ID</p>
+        <input type="text" id="rainbowID" name="rainbowID" />
+
+        <div class="checkbox">
+            <label><input name="language1" type="checkbox" value="chinese">Chinese</label>
+        </div>
+        <div class="checkbox">
+            <label><input name="language2" type="checkbox" value="english">English</label>
+        </div>
+        <div class="checkbox">
+            <label><input name="skill1" type="checkbox" value="skill1">Skill1</label>
+        </div>
+        <div class="checkbox">
+            <label><input name="skill2" type="checkbox" value="skill2">Skill2</label>
+        </div>
+
+        <div class="submit-name">
+            <input type="submit" value="get the email" />
+        </div>
+        </div>
+    </form>
+</body>
+</html>
